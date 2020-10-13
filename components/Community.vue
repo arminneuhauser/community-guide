@@ -7,7 +7,7 @@
     <div>
       <h3>Wählen Sie Top-Postings aus:</h3>
       <div>
-        <posting v-for="item in items" :key="item.message" :headline="item.headline" :message="item.message"/>
+        <posting v-for="item in items" :key="item.headline" :headline="item.headline" :message="item.message"/>
       </div>
     </div>
   </section>

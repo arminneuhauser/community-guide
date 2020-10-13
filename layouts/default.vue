@@ -5,7 +5,6 @@
       <Nuxt />
     </main>
     <site-footer/>
-    <svg-sprite/>
   </div>
 </template>
 
@@ -28,6 +27,8 @@ body {
     sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
+  background: var(--background);
+  color: var(--on-background);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;

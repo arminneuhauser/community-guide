@@ -8,9 +8,9 @@
 <style lang="scss" scoped>
 header {
   @include box-shadow;
-  
+
   position: fixed;
-  background: #fff;
+  background: var(--background);
   top: 0;
   left: 0;
   width: 100%;
