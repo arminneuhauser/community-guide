@@ -2,7 +2,8 @@
   <footer>
     <h2>© STANDARD Verlagsgesellschaft m.b.H. 2020</h2>
     <p>
-      Alle Rechte vorbehalten. Nutzung ausschließlich für den privaten Eigenbedarf.
+      Alle Rechte vorbehalten. Nutzung ausschließlich für den privaten Eigenbedarf.<br>
+      Eine Weiterverwendung und Reproduktion über den persönlichen Gebrauch hinaus ist nicht gestattet.
     </p>
     <pre>count: {{ $store.state.count }}</pre>
   </footer>

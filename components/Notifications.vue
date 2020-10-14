@@ -75,6 +75,7 @@ export default {
     position: absolute;
     right: 10px;
     width: calc(100vw - 20px);
+    max-width: 350px;
     background: var(--background);
     z-index: 2;
 
@@ -84,6 +85,10 @@ export default {
       padding: 10px;
       text-decoration: none;
       display: block;
+
+      &:hover {
+        background-color: rgba(0,0,0,0.05);
+      }
 
       &:last-child {
         border: 0;

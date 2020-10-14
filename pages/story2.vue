@@ -37,7 +37,7 @@
         <h3>Fixkostenzuschuss II mit Konstruktionsfehler</h3><p>Neos-Chefin Beate Meinl-Reisinger wünscht sich in einer Pressekonferenz am Dienstag, dass Blümel nach seinem Exkurs im Wien-Wahlkampf wieder seiner Vollzeitbeschäftigung als Finanzminister nachgeht. Über den Sommer hätte er verabsäumt, weitere Stützen für die heimische Wirtschaft auf den Weg zu bringen. Meinl-Reisinger warnt vor einer Pleitewelle in Österreich. Mitunter auch, weil Projekte wie die zweite Phase des Fixkostenzuschusses, die Blümel als "Überwinterung" verkauft, gravierende Konstruktionsmängel aufweisen würden. Viele Unternehmen, insbesondere Tourismusbetriebe, könnten schon Mitte Dezember ohne weitere Zuschüsse dastehen. Der Zuschuss würde den harten Winter nicht umfassen, sagt Meinl-Reisinger. <a href="/story/2000120737965/experte-warnt-vor-groben-fehlern-in-bluemels-plan-fuer-fixkostenzuschuss">Der STANDARD berichtete</a>. (Gerald John, Jan Michael Marchart, 13.10.2020)</p>
       </div>
     </article>
-    <community :moderation="this.community.moderation" :headline="this.community.headline" :items="this.community.items"/>
+    <community :moderation="this.community.moderation" :headline="this.community.headline" :items="this.community.items" :toppostings="this.community.toppostings"/>
     <gratification-modal v-show="$store.state.count >= 5"/>
   </div>
 </template>
@@ -50,6 +50,13 @@ export default {
       community: {
         moderation: true,
         headline: '743 Postings',
+        toppostings: [
+          {
+            user: '',
+            headline: 'Ihr Beitrag gegen Message Control',
+            message: 'Damit Sie bei politischen Ereignissen Überblick behalten, hinter die Fassade politischer Phrasen blicken und die Message Control umgehen, bedarf es Journalismus, der Fakten einordnet und die Wahrheit herausfiltert. Doch die Rahmenbedingungen für unsere Berichterstattung sind derzeit schwierig: Einerseits bekommt DER STANDARD vor allem rund um die COVID-19-Berichterstattung so viele Zugriffe wie nie zuvor, andererseits brechen seit März Werbeeinnahmen und Umsätze weg. Um Ihnen auch weiterhin unabhängige Berichterstattung in dieser Qualität liefern zu können, brauchen wir Ihre Unterstützung! Jeder Beitrag zählt: dst.at/supporter'
+          }
+        ],
         items: [
           {
             message: 'Es gab definitiv keine Unterwerfung der Grünen auf Bundesebene. Sowohl Regierungvereinbarung als auch Regierungspraxis sind mit türkis-blau überhaupt nicht zu vergleichen und können sich auch im Vergleich zu rot-schwarzen Vorgängerregierungen durchaus sehen lassen. Dass sie der deutlich kleinere Partner sind macht es selbstverständlich nicht einfacher und umso beachtlicher im Vergleich zu Regierungen in denen die SP sogar den Kanzler stellte. Ein Innenpolitik Redakteur kann das nicht übersehen. Darum wiegt es für mich umso schwerer wenn hier absichtlich und höchst tendenziös vereinfacht wird.'

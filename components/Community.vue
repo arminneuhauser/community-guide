@@ -27,10 +27,13 @@
         </div>
       </div>
     </div>
-    <div class="top-posings">
+    <div class="top-postings">
+      <posting v-for="item in toppostings" :key="item.headline" :headline="item.headline" :message="item.message" :actions="false"/>
+    </div>
+    <div id="rate-postings" class="rate-postings">
       <h3>Welche dieser Postings möchtest du dem Forum voranstellen?</h3>
       <div class="postings">
-        <posting v-for="item in items" :key="item.headline" :headline="item.headline" :message="item.message"/>
+        <posting v-for="item in items" :key="item.headline" :headline="item.headline" :message="item.message" :actions="true"/>
         <div class="success">
           <p>Vielen Dank für deine Auswahl.</p>
           <nuxt-link to="/story2#community">Weiter zum Artikel Wenig Investitionen, kaum Klimaschutz: Blümel erntet schon vor Rede Kritik für sein Budget</nuxt-link>
@@ -65,7 +68,8 @@ export default {
   props: [
     'moderation',
     'headline',
-    'items'
+    'items',
+    'toppostings'
   ]
 }
 </script>
@@ -81,6 +85,7 @@ export default {
       font-size: 1.3rem;
       font-weight: normal;
       margin: 0;
+      text-transform: none;
     }
   }
 }

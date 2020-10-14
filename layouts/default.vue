@@ -3,6 +3,7 @@
     <site-header/>
     <main class="main" role="main">
       <Nuxt />
+      <aside class="sitebar"></aside>
     </main>
     <site-footer/>
   </div>
@@ -38,6 +39,18 @@ body {
 
 main {
   padding-top: 50px;
+
+  @include breakpoint(l) {
+    display: grid;
+    grid-template-columns: auto 300px;
+    padding-top: 86px;
+  }
+
+  .sitebar {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+  }
 }
 
 img {
@@ -63,6 +76,10 @@ figure {
   font-weight: bold;
 }
 
+button {
+  cursor: pointer;
+}
+
 input, textarea {
   font-family: inherit;
   color: currentColor;
@@ -71,6 +88,8 @@ input, textarea {
 }
 
 .story {
+  max-width: 615px;
+  margin: 0 auto;
   padding: var(--site-core-padding);
 
   article {

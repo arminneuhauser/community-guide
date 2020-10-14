@@ -12,6 +12,11 @@
   svg {
     height: 20px;
     width: 138px;
+
+    @include breakpoint(l) {
+      height: 36px;
+      width: 249px;
+    }
   }
 }
 </style>

@@ -4,7 +4,7 @@
       <h4>{{ headline }}</h4>
       <p>{{ message }}</p>
     </div>
-    <div class="posting__actions">
+    <div v-if="actions" class="posting__actions">
       <div>
         <button @click="onClick">
           <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -50,7 +50,8 @@ export default {
   },
   props: [
     'headline',
-    'message'
+    'message',
+    'actions'
   ],
   computed: {
     count () {
