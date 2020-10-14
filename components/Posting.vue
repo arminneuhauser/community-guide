@@ -1,8 +1,14 @@
 <template>
   <div v-if="this.active" class="posting">
+    <div v-if="user" class="posting__header">
+      {{ user }}
+    </div>
     <div class="posting__body">
-      <h4>{{ headline }}</h4>
+      <h4 v-if="headline">{{ headline }}</h4>
       <p>{{ message }}</p>
+    </div>
+    <div v-if="user" class="posting__footer">
+      <span>Zur Diskussion</span>
     </div>
     <div v-if="actions" class="posting__actions">
       <div>
@@ -49,6 +55,7 @@ export default {
     }
   },
   props: [
+    'user',
     'headline',
     'message',
     'actions'
@@ -74,6 +81,43 @@ export default {
   border: 1px solid var(--border-color);
   margin-bottom: 15px;
   font-size: 1.5rem;
+
+  .rate-postings & {
+    border-color: var(--guide);
+    background: rgba(103,177,97,0.5);
+
+    .posting__actions {
+      border-color: var(--guide);
+
+      > div {
+        &:nth-child(2) {
+          border-color: var(--guide);
+        }
+      }
+    }
+  }
+
+  .posting__header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    + .posting__body {
+      padding-top: 10px;
+    }
+  }
+
+  .posting__footer {
+    border-top: 1px solid var(--border-color);
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    text-decoration: underline;
+
+    * {
+      opacity: 0.6;
+    }
+  }
 
   .posting__body {
     padding: 15px;

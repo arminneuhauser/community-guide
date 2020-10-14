@@ -52,9 +52,8 @@ export default {
         headline: '743 Postings',
         toppostings: [
           {
-            user: '',
-            headline: 'Ihr Beitrag gegen Message Control',
-            message: 'Damit Sie bei politischen Ereignissen Überblick behalten, hinter die Fassade politischer Phrasen blicken und die Message Control umgehen, bedarf es Journalismus, der Fakten einordnet und die Wahrheit herausfiltert. Doch die Rahmenbedingungen für unsere Berichterstattung sind derzeit schwierig: Einerseits bekommt DER STANDARD vor allem rund um die COVID-19-Berichterstattung so viele Zugriffe wie nie zuvor, andererseits brechen seit März Werbeeinnahmen und Umsätze weg. Um Ihnen auch weiterhin unabhängige Berichterstattung in dieser Qualität liefern zu können, brauchen wir Ihre Unterstützung! Jeder Beitrag zählt: dst.at/supporter'
+            user: 'hdldum',
+            message: 'Spätestens mit Corona müsste dafür gesorgt werden dass die Lebenshaltungskosten nicht immer weiter steigen, ich sag nur Mieten, Energie und Lebensmittel. Das würde die Sozialausgaben auch senken bzw. stabilisieren.'
           }
         ],
         items: [
