@@ -17,5 +17,6 @@ header {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 </style>

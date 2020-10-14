@@ -7,7 +7,7 @@
         <p>Die SPÖ hat es in der Hand, die Grünen aufs Podest oder aus den Angeln zu heben. Die Frage einer Koalition in Wien hat wesentlichen Einfluss auf die Gesamtpartei</p>
       </header>
       <div class="body">
-        <figure data-type="image" data-fullscreen-enabled="true">
+        <figure data-type="image">
           <picture>
             <source media="(max-width: 959px)" srcset="//images.derstandard.at/img/2020/10/13/HebeinLudwig.jpg?w=750&amp;s=ed786911">
             <source media="(min-width: 1690px)" srcset="//images.derstandard.at/img/2020/10/13/HebeinLudwig.jpg?w=265&amp;s=409db5da">
@@ -52,7 +52,7 @@ export default {
             headline: 'ob lieb oder nicht lieb:',
             message: 'die GRÜNEN Ur-Anliegen werden uns demnächst wichtig werden. Der nächste warme Sommer kommt bestimmt, der übernächste Skiurlaub ist fraglich, die Kommunikation mit denen, die GRÜN wählen, da fehlt den anderen Parteien etwas an der grünen Grundeinstellung. Grün bedeutet "immer mit Rücksicht auf die Umwelt. Als zweiten Ansatz sehe ich beiden Wiener Grünen die Randgruppen: Schwimmbecken am Gürtel war ja nicht für die ach so urbanen Städer, das sollte ja etwas für die sein, die sonst nur radikale Parteien wählen, weil sie sonst nicht gehört und berücksichtigt werden. So sehr ich auch Ansätze der PINKEN schätze, insbesonders die zur totalen Transparenz, "zuerst die Umwelt und die Ausgegrenzten", das ist eindeutig GRÜN.'
           },
-          {
+          /*{
             message: 'Irgendwie kommen mir die Kommentare zum Verhältnis der Roten und Grünen in Wien immer völlig überdramatisiert vor. Ich sehe einfach nicht wo genau die Grünen hier so eine Belastung für die SPÖ sein sollen? Wegen dem bissl Streit im Verkehrsbereich? Der noch dazu stark vom Wahlkampf befeuert wurde und zu dem Ludwig schon selbst quasi gesagt hat, dass es daran nicht scheitern wird? Die Grünen sind doch eh leicht zufrieden zu stellen. Die Neos wären mindestens genauso lästig und mit den Türkisen kann man es sowieso vergessen.'
           },
           {
@@ -77,7 +77,7 @@ export default {
           {
             headline: 'das ist ein interessantes phänomen',
             message: 'offensichtlich gibt es eine menge wählerInnen, die großen wert auf eine "reine lehre" legen, und nicht ertragen können, wenn in einer koalition dann a) gewisse kernanliegen keine berücksichtigung finden können und b) an sich widerstrebende dinge mitgetragen werden müssen soll sein, diese leute müssen dann halt warten, dass ihre partei mal wo eine alleinregierung bilden kann... so RICHTIG interessant finde ich aber leute die (nur als beispiel) sich aus enttäuschung über eine koalition mit der övp von grün abwenden und dann neos wählen, die von anfang an völlig andere vorstellungen vertreten - oder aus enttäuschung über rot-grün in wien dann zur övp gehen... da müssen andere dinge eine rolle spielen, die nicht ausgesprochen werden...'
-          }
+          }*/
         ]
       }
     }
@@ -95,7 +95,7 @@ export default {
 
   header {
     h2 {
-      font-family: 'Roboto Condensed';
+      font-family: $fs-condensed;
       font-size: 1.6rem;
       font-weight: normal;
       text-transform: uppercase;

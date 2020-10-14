@@ -16,15 +16,7 @@
 }
 
 body {
-  font-family:
-    'Roboto',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: $fs-sans;
   font-size: 1.6rem;
   line-height: 1.4;
   background: var(--background);

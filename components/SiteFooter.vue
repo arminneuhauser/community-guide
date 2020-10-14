@@ -4,8 +4,19 @@
     <p>
       Alle Rechte vorbehalten. Nutzung ausschließlich für den privaten Eigenbedarf.
     </p>
+    <pre>count: {{ $store.state.count }}</pre>
   </footer>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      count: 0
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 footer {
@@ -19,6 +30,10 @@ footer {
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  pre {
+    opacity: 0.01
   }
 }
 </style>

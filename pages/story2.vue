@@ -7,12 +7,11 @@
         <p>Der Finanzminister macht derzeit Unsummen für die Corona-Bekämpfung locker. Aus Sicht der Opposition geht die Strategie der Regierung aber nicht weit genug</p>
       </header>
       <div class="body">
-        <figure data-type="image" data-fullscreen-enabled="true">
+        <figure data-type="image">
           <picture>
               <source media="(max-width: 959px)" srcset="//images.derstandard.at/img/2020/10/12/bluemel-002.jpg?w=750&amp;s=66db3d2b">
               <source media="(min-width: 1690px)" srcset="//images.derstandard.at/img/2020/10/12/bluemel-002.jpg?w=265&amp;s=87892ac3">
               <source media="(min-width: 960px)" srcset="//images.derstandard.at/img/2020/10/12/bluemel-002.jpg?w=930&amp;s=386b862a">
-
               <img src="//images.derstandard.at/img/2020/10/12/bluemel-002.jpg?w=750&amp;s=66db3d2b" data-fullscreen-src="//images.derstandard.at/img/2020/10/12/bluemel-002.jpg?w=1600&amp;s=a57006fd">
           </picture>
           <figcaption>
@@ -39,7 +38,7 @@
       </div>
     </article>
     <community :moderation="this.community.moderation" :headline="this.community.headline" :items="this.community.items"/>
-    <gratification-modal v-if="this.gratification"/>
+    <gratification-modal v-show="$store.state.count >= 5"/>
   </div>
 </template>
 
@@ -56,29 +55,12 @@ export default {
             message: 'Es gab definitiv keine Unterwerfung der Grünen auf Bundesebene. Sowohl Regierungvereinbarung als auch Regierungspraxis sind mit türkis-blau überhaupt nicht zu vergleichen und können sich auch im Vergleich zu rot-schwarzen Vorgängerregierungen durchaus sehen lassen. Dass sie der deutlich kleinere Partner sind macht es selbstverständlich nicht einfacher und umso beachtlicher im Vergleich zu Regierungen in denen die SP sogar den Kanzler stellte. Ein Innenpolitik Redakteur kann das nicht übersehen. Darum wiegt es für mich umso schwerer wenn hier absichtlich und höchst tendenziös vereinfacht wird.'
           },
           {
-            headline: '',
-            message: ''
+            message: 'Umwelt betrifft am Ende jeden. Im Normal würde diese ja gar keine Lobby brauchen, wenn man erkennt, das man selbst daran hängt. Bei der Wirtschaft war es aber eben anders gemeint. Wirtschaftstreibende, also da auch die Unternehmer gemeint, sehen sich bei einer roten Regierung wohl nicht in erster Linie vertreten, im Sinne der Interessen. In einem Sozialstaat und hier speziell in einer solchen geführten Stadt, wird es da sicher gerne gesehen, auch eine Adresse zu haben, die in der Gestaltung aktiv beteiligt ist. Und auch da gilt interessanterweise das gleiche wie beim Klima - jeder hängt da drinn, aber dieser Kuchen steht immer in der Diskussion der Teilung oder besser gesagt der Verteilung. Und es geht nicht um Egos, sondern Ideen.'
           },
           {
-            headline: '',
-            message: ''
-          },
-          {
-            headline: '',
-            message: ''
-          },
-          {
-            headline: '',
-            message: ''
-          },
-          {
-            headline: '',
-            message: ''
-          },
-          {
-            headline: '',
-            message: ''
-          },
+            headline: 'ob lieb oder nicht lieb:',
+            message: 'die GRÜNEN Ur-Anliegen werden uns demnächst wichtig werden. Der nächste warme Sommer kommt bestimmt, der übernächste Skiurlaub ist fraglich, die Kommunikation mit denen, die GRÜN wählen, da fehlt den anderen Parteien etwas an der grünen Grundeinstellung. Grün bedeutet "immer mit Rücksicht auf die Umwelt. Als zweiten Ansatz sehe ich beiden Wiener Grünen die Randgruppen: Schwimmbecken am Gürtel war ja nicht für die ach so urbanen Städer, das sollte ja etwas für die sein, die sonst nur radikale Parteien wählen, weil sie sonst nicht gehört und berücksichtigt werden. So sehr ich auch Ansätze der PINKEN schätze, insbesonders die zur totalen Transparenz, "zuerst die Umwelt und die Ausgegrenzten", das ist eindeutig GRÜN.'
+          }
         ]
       }
     }
@@ -96,7 +78,7 @@ export default {
 
   header {
     h2 {
-      font-family: 'Roboto Condensed';
+      font-family: $fs-condensed;
       font-size: 1.6rem;
       font-weight: normal;
       text-transform: uppercase;

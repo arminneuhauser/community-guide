@@ -9,7 +9,7 @@
       </svg>
     </button>
     <nav v-if="showNotifications">
-      <nuxt-link to="/story#community" v-for="item in items" :key="item.message">
+      <nuxt-link to="/story#community" v-for="item in items" :key="item.message" @click.native="showNotifications = false">
         <p v-html="item.message"></p>
         <p><small>{{ item.timestamp }}</small></p>
       </nuxt-link>

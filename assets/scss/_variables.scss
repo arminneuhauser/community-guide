@@ -1,3 +1,6 @@
+$fs-sans: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$fs-condensed: 'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif;;
+
 :root {
   --cta: #ec008c;
   --on-cta: #fff;
@@ -5,7 +8,7 @@
   --on-background: #000;
   --border-color: #ececec;
   --posting-background: #f7f7f7;
-  --guide: #0079c2;
+  --guide: green;
 
   --site-core-padding: 0 25px;
 }

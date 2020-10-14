@@ -53,7 +53,7 @@ export default {
     onClick: function() {
       this.active = false;
 
-      store.commit('increment')
+      this.$store.commit('increment')
     }
   }
 }
