@@ -28,7 +28,7 @@ export default {
           timestamp: 'vor 4 Stunden'
         },*/
         {
-          message: 'Username, schön, dass du da bist. Wähle für den Artikel <strong>Grüner Unterwerfungsprozess</strong> interessante Stimmen aus dem Forum aus!',
+          message: 'Schön, dass du da bist. Wähle für den Artikel <strong>Grüner Unterwerfungsprozess</strong> interessante Stimmen aus dem Forum aus!',
           timestamp: 'vor 2 Stunden'
         }
       ]

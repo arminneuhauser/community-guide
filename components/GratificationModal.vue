@@ -23,11 +23,14 @@
   left: 0;
   padding: 25px;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
   background: var(--background);
-  height: 100%;
+  max-width: 350px;
   padding: 25px;
   text-align: center;
 
