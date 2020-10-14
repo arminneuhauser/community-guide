@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
   font-size: 62.5%; // 1rem = 10px
@@ -55,6 +55,7 @@ figure {
 
 .button {
   background: var(--cta);
+  border: none;
   color: var(--on-cta);
   text-decoration: none;
   padding: 10px 35px;
@@ -62,4 +63,59 @@ figure {
   font-weight: bold;
 }
 
+input, textarea {
+  font-family: inherit;
+  color: currentColor;
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+}
+
+.story {
+  padding: var(--site-core-padding);
+
+  article {
+    margin: 20px 0;
+  }
+
+  header {
+    h2 {
+      font-family: $fs-condensed;
+      font-size: 1.6rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin: 0 0 6px;
+    }
+    h1 {
+      font-family: $fs-condensed;
+      font-size: 3.2rem;
+      line-height: 1;
+      margin: 0 0 8px;
+    }
+    p {
+      font-size: 1.8rem;
+      margin: 0 0 8px;
+    }
+  }
+
+  .body {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  figure {
+    margin: 20px 0;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+      margin: 15px 0 0;
+    }
+    footer {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      margin: 6px 0 0;
+      opacity: 0.3;
+    }
+  }
+}
 </style>

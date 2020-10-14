@@ -85,52 +85,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.story {
-  padding: var(--site-core-padding);
-
-  article {
-    margin: 20px 0;
-  }
-
-  header {
-    h2 {
-      font-family: $fs-condensed;
-      font-size: 1.6rem;
-      font-weight: normal;
-      text-transform: uppercase;
-      margin: 0 0 6px;
-    }
-    h1 {
-      font-size: 3.2rem;
-      line-height: 1;
-      margin: 0 0 8px;
-    }
-    p {
-      font-size: 1.8rem;
-      margin: 0 0 8px;
-    }
-  }
-
-  .body {
-    font-size: 1.7rem;
-    line-height: 2.6rem;
-  }
-
-  figure {
-    margin: 20px 0;
-
-    p {
-      font-size: 1.5rem;
-      line-height: 2.1rem;
-      margin: 15px 0 0;
-    }
-    footer {
-      font-size: 1.2rem;
-      line-height: 1.4rem;
-      margin: 6px 0 0;
-      opacity: 0.3;
-    }
-  }
-}
+<style lang="scss">
+// styles in layout/default.vue
 </style>

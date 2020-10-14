@@ -33,7 +33,27 @@
         <posting v-for="item in items" :key="item.headline" :headline="item.headline" :message="item.message"/>
         <div class="success">
           <p>Vielen Dank für deine Auswahl.</p>
-          <nuxt-link to="/story2">Weiter zum Artikel Wenig Investitionen, kaum Klimaschutz: Blümel erntet schon vor Rede Kritik für sein Budget</nuxt-link>
+          <nuxt-link to="/story2#community">Weiter zum Artikel Wenig Investitionen, kaum Klimaschutz: Blümel erntet schon vor Rede Kritik für sein Budget</nuxt-link>
+        </div>
+      </div>
+    </div>
+    <div class="forum">
+      <div class="forum-input">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z" />
+        </svg>
+        <p>Ihr Kommentar</p>
+      </div>
+      <div class="upost" v-for="index in 10" :key="index">
+        <div class="upost-header">
+          <span>Username</span>
+          <small>vor x Stunden</small>
+        </div>
+        <div class="upost-content">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        </div>
+        <div class="upost-footer">
+          <a href="#">antworten</a>
         </div>
       </div>
     </div>
@@ -103,6 +123,55 @@ export default {
 
     .moderator {
       color: var(--cta);
+    }
+  }
+}
+
+.forum {
+  .forum-input {
+    @include box-shadow;
+    background: #fff;
+    padding: 10px 15px 40px;
+    display: flex;
+    align-items: center;
+
+    * {
+      opacity: 0.6;
+      margin: 0;
+    }
+
+    svg {
+      transform: rotate(180deg);
+      margin-right: 5px;
+    }
+  }
+}
+
+.upost {
+  background: var(--border-color);
+  margin: 10px 0;
+  opacity: 0.4;
+
+  .upost-header {
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .upost-content {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+
+  .upost-footer {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    font-size: 1.3rem;
+
+    a {
+      color: inherit;
+      opacity: 0.6;
     }
   }
 }
