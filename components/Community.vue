@@ -56,7 +56,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
         </div>
         <div class="upost-footer">
-          <a href="#">antworten</a>
+          <span>antworten</span>
         </div>
       </div>
     </div>
@@ -180,8 +180,8 @@ export default {
     padding: 5px 10px;
     font-size: 1.3rem;
 
-    a {
-      color: inherit;
+    span {
+      text-decoration: underline;
       opacity: 0.6;
     }
   }

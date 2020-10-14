@@ -27,6 +27,7 @@
           <!--<span>Melden</span>-->
         </button>
         <div v-show="reportVisible" class="report">
+          <h4>Posting melden</h4>
           <input type="text" placeholder="Ihr Name">
           <input type="email" placeholder="Ihre E-Mail-Adresse">
           <textarea placeholder="Begründung"></textarea>
@@ -173,6 +174,10 @@ export default {
     display: flex;
     flex-direction: column;
     transform: translateX(-25%);
+
+    h4 {
+      margin: 0 0 6px;
+    }
 
     input, textarea, button {
       width: 100%;
