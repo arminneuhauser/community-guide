@@ -41,9 +41,16 @@ export default {
     'headline',
     'message'
   ],
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
+  },
   methods: {
     onClick: function() {
-      this.active = false
+      this.active = false;
+
+      store.commit('increment')
     }
   }
 }

@@ -23,13 +23,13 @@ export default {
     return {
       showNotifications: false,
       items: [
+        /*{
+          message: 'Gratulation! Du hast 1.000 Postings bearbeitet. Als Dankeschön erhältst du 3 Monate PUR gratis.<br><strong><u>Jetzt einlösen</u></strong>',
+          timestamp: 'vor 4 Stunden'
+        },*/
         {
           message: 'Username, schön, dass du da bist. Wähle für den Artikel <strong>Grüner Unterwerfungsprozess</strong> interessante Stimmen aus!',
           timestamp: 'vor 2 Stunden'
-        },
-        {
-          message: 'Lorem ipsum dolor sit amet',
-          timestamp: 'vor 4 Stunden'
         }
       ]
     }
@@ -76,6 +76,7 @@ export default {
     right: 10px;
     width: calc(100vw - 20px);
     background: var(--background);
+    z-index: 2;
 
     a {
       color: inherit;

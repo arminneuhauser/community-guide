@@ -61,4 +61,13 @@ figure {
   }
 }
 
+.button {
+  background: var(--cta);
+  color: var(--on-cta);
+  text-decoration: none;
+  padding: 10px 35px;
+  text-align: center;
+  font-weight: bold;
+}
+
 </style>

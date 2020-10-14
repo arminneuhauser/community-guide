@@ -4,19 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      stories: {
-        kicker: '',
-        headline: 'Grüner Unterwerfungsprozess'
-      }
-    }
-  }
-}
-</script>
-
 <style lang="scss" scoped>
 .frontpage {
 
