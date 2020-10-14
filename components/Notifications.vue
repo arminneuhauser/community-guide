@@ -24,7 +24,7 @@ export default {
       showNotifications: false,
       items: [
         {
-          message: 'Bewerte Postings in <strong>Artikel XY</strong>',
+          message: 'Username, schön, dass du da bist. Wähle für den Artikel <strong>Grüner Unterwerfungsprozess</strong> interessante Stimmen aus!',
           timestamp: 'vor 2 Stunden'
         },
         {

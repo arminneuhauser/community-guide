@@ -34,6 +34,18 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      community: {
+        headline: '1.163 Postings'
+      }
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .story {
   padding: var(--site-core-padding);
