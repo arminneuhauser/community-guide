@@ -1,9 +1,16 @@
-export const state = () => ({
-  count: 0
-})
+import Vuex from 'vuex'
 
-export const mutations = {
-  increment(state) {
-    state.count++
-  }
+const createStore = () => {
+  return new Vuex.Store({
+    state: {
+      count: 0
+    },
+    mutations: {
+      increment(state) {
+        state.count++
+      }
+    }
+  })
 }
+
+export default createStore

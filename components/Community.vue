@@ -1,5 +1,5 @@
 <template>
-  <section class="community">
+  <section id="community" class="community">
     <header>
       <h1>{{this.headline}}</h1>
       <h2>Jeder User hat das Recht auf freie Meinungsäußerung.</h2>

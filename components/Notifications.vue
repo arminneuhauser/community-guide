@@ -9,7 +9,7 @@
       </svg>
     </button>
     <nav v-if="showNotifications">
-      <nuxt-link to="/story" v-for="item in items" :key="item.message">
+      <nuxt-link to="/story#community" v-for="item in items" :key="item.message">
         <p v-html="item.message"></p>
         <p><small>{{ item.timestamp }}</small></p>
       </nuxt-link>
@@ -28,7 +28,7 @@ export default {
           timestamp: 'vor 4 Stunden'
         },*/
         {
-          message: 'Username, schön, dass du da bist. Wähle für den Artikel <strong>Grüner Unterwerfungsprozess</strong> interessante Stimmen aus!',
+          message: 'Username, schön, dass du da bist. Wähle für den Artikel <strong>Grüner Unterwerfungsprozess</strong> interessante Stimmen aus dem Forum aus!',
           timestamp: 'vor 2 Stunden'
         }
       ]

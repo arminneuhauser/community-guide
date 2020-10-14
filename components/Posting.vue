@@ -10,6 +10,7 @@
           <svg style="width:24px;height:24px" viewBox="0 0 24 24">
             <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
           </svg>
+          <!--<span>Ablehnen</span>-->
         </button>
       </div>
       <div>
@@ -17,13 +18,15 @@
           <svg style="width:24px;height:24px" viewBox="0 0 24 24">
             <path fill="currentColor" d="M14.4,6L14,4H5V21H7V14H12.6L13,16H20V6H14.4Z" />
           </svg>
+          <!--<span>Melden</span>-->
         </button>
       </div>
       <div>
         <button @click="onClick">
           <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+            <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
           </svg>
+          <!--<span>Auswählen</span>-->
         </button>
       </div>
     </div>
@@ -90,6 +93,15 @@ export default {
       height: 35px;
       line-height: 0;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-left: 5px;
+      }
     }
   }
 }
