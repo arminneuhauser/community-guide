@@ -34,7 +34,7 @@ footer {
   }
 
   pre {
-    opacity: 0.01
+    opacity: 0.12;
   }
 }
 </style>

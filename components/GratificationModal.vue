@@ -38,5 +38,9 @@
     width: 48px;
     height: 48px;
   }
+
+  h1, p {
+    margin: 10px 0;
+  }
 }
 </style>

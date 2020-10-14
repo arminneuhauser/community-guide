@@ -72,6 +72,7 @@ figure {
   padding: 10px 35px;
   text-align: center;
   font-weight: bold;
+  display: inline-flex;
 }
 
 button {
@@ -86,12 +87,18 @@ input, textarea {
 }
 
 .story {
-  max-width: 615px;
-  margin: 0 auto;
   padding: var(--site-core-padding);
 
   article {
+    position: relative;
     margin: 20px 0;
+
+    > div {
+      > * {
+        max-width: 615px;
+        margin: 0 auto;
+      }
+    }
   }
 
   header {

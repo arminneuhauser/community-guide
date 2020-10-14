@@ -35,8 +35,8 @@
       <div class="postings">
         <posting v-for="item in items" :key="item.headline" :headline="item.headline" :message="item.message" :actions="true"/>
         <div class="success">
-          <p>Vielen Dank für deine Auswahl.</p>
-          <p><nuxt-link to="/story2#community">Weitere Postings auswählen im Artikel Blümel erntet schon vor Rede Kritik für sein Budget</nuxt-link></p>
+          <h3>Vielen Dank für deine Auswahl.</h3>
+          <p><nuxt-link to="/story2#community">Weitere Postings auswählen im Artikel <strong>Blümel erntet schon vor Rede Kritik für sein Budget</strong></nuxt-link></p>
         </div>
       </div>
     </div>
@@ -76,13 +76,21 @@ export default {
 
 <style lang="scss">
 .community {
+  max-width: 615px;
+  margin: 0 auto;
+  padding-top: 30px;
+
   header {
     background: var(--cta);
     color: var(--on-cta);
-    padding: 8px 15px;
+    padding: 8px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     h1, h2 {
       font-size: 1.3rem;
+      line-height: 1;
       font-weight: normal;
       margin: 0;
       text-transform: none;
@@ -92,7 +100,7 @@ export default {
 
 .success {
   background: green;
-  padding: 15px;
+  padding: 15px 35px;
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
