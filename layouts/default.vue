@@ -73,6 +73,7 @@ figure {
   text-align: center;
   font-weight: bold;
   display: inline-flex;
+  justify-content: center;
 }
 
 button {
